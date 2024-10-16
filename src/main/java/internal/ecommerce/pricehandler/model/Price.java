@@ -4,17 +4,20 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+
+import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
 @Entity
 public record Price(
-        @Id @GeneratedValue(strategy = GenerationType.IDENTITY) Long id,
-        int brandId,
+        Long brandId,
         LocalDateTime startDate,
         LocalDateTime endDate,
-        int priceList,
-        int productId,
-        int priority,
-        double price,
+        @Id
+        @GeneratedValue(strategy = GenerationType.IDENTITY)
+        Long priceList,
+        Long productId,
+        Integer priority,
+        BigDecimal price,
         String curr
 ){}
