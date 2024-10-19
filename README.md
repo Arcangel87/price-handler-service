@@ -17,19 +17,19 @@ Requirement can be found here: [Requirements.md](Requirements.md)
 - Docker Compose
 
 ## Getting Started
-Clone the Repository
-`git clone https://github.com/yourusername/price-handler-service.git`
+Clone the Repository </br>
+`git clone https://github.com/yourusername/price-handler-service.git` </br>
 `cd price-handler-service`
 
 ## Build the Project
-Use Maven to build the project:
+Use Maven to build the project:</br>
 `mvn clean package`
 
 ## Run the Application
-You can run the application using Docker Compose:
+You can run the application using Docker Compose:</br>
 
-`docker-compose up --build
-`
+`docker-compose up --build` </br>
+
 This will build the Docker image and start the application on port 8080.
 
 Or you can run `PriceHandlerRunner.java`
@@ -37,9 +37,9 @@ Or you can run `PriceHandlerRunner.java`
 ## Accessing the Application
 The application exposes a REST endpoint to query prices:
 
-- **Endpoint:** /price
-- **Method:** GET
-- **Parameters:**
+**Endpoint:** /price </br>
+**Method:** GET </br>
+**Parameters:**
 - productId (Long)
 - brandId (Long)
 - applicationDate (ISO 8601 format)
@@ -51,13 +51,13 @@ The application exposes a REST endpoint to query prices:
 ## Accessing the H2 Database
 The H2 database console can be accessed at:
 
-**URL:** http://localhost:8080/h2-console
-**JDBC URL:** jdbc:h2:mem:testdb
-**Username:** sa
-**Password:** password
+- **URL:** http://localhost:8080/h2-console
+- **JDBC URL:** jdbc:h2:mem:testdb
+- **Username:** sa
+- **Password:** password
 
 ## Running Tests
-To run the tests, use the following Maven command:
+To run the tests, use the following Maven command: </br>
 
 `mvn test`
 
