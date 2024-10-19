@@ -1,12 +1,14 @@
 package internal.ecommerce.pricehandler.domain.model;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
+import lombok.Data;
 
 @Entity
-public record Brand(
-        @Id @GeneratedValue(strategy = GenerationType.IDENTITY) Long id,
-        String name
-) {}
+@Table(name = "BRANDS")
+@Data
+public class Brand {
+
+        @Id
+        @GeneratedValue(strategy = GenerationType.IDENTITY) Long id;
+        String name;
+}
