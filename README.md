@@ -56,6 +56,13 @@ The H2 database console can be accessed at:
 - **Username:** sa
 - **Password:** password
 
+## Accessing Swagger Documentation
+Swagger documentation can be accessed at:
+
+- **URL:** http://localhost:8080/swagger-ui.html
+
+To disable it on application.yml change `springdoc.swagger-ui.enabled` to false
+
 ## Running Tests
 To run the tests, use the following Maven command: </br>
 
