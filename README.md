@@ -26,13 +26,13 @@ Use Maven to build the project:</br>
 `mvn clean package`
 
 ## Run the Application
-You can run the application using Docker Compose:</br>
+Run `internal.ecommerce.pricehandlerPriceHandlerRunner.java`
+
+or You can run the application using Docker Compose:</br>
 
 `docker-compose up --build` </br>
 
 This will build the Docker image and start the application on port 8080.
-
-Or you can run `PriceHandlerRunner.java`
 
 ## Accessing the Application
 The application exposes a REST endpoint to query prices:
@@ -65,6 +65,8 @@ To run the tests, use the following Maven command: </br>
 ```src
 src
 ├── main
+│   ├── docker
+│   │   └── Dockerfile
 │   ├── java
 │   │   └── internal
 │   │       └── ecommerce
@@ -102,6 +104,7 @@ src
                             └── PriceControllerTest.java
                     └── integration
                         └── PriceHandlerServiceIntegration.java
+docker-compose.yml
 
 ```
 

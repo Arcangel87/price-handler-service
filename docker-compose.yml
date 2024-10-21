@@ -1,6 +1,8 @@
 version: '3.8'
 services:
   price-handler-service:
-    build: .
+    build:
+      context: .
+      dockerfile: src/main/docker/Dockerfile
     ports:
       - "8080:8080"
